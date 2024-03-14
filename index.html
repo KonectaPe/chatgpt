@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aventuras en la Naturaleza</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <style>
+      /* Estilos para hacer que las imágenes del carrusel ocupen todo el alto de la pantalla */
+      .carousel-item {
+        height: 100vh;
+        min-height: 300px; /* Altura mínima para evitar imágenes demasiado pequeñas en pantallas pequeñas */
+        background-size: cover;
+      }
+
+      /* Estilos para hacer que las imágenes de las tarjetas ocupen todo el alto */
+      .card-img-top {
+        height: 400px; /* Altura de las imágenes en las tarjetas */
+        object-fit: cover; /* Ajuste de la imagen para cubrir completamente la tarjeta */
+      }
+      /* Estilos para el footer */
+      footer {
+        background-color: #343a40; /* Color de fondo oscuro */
+        color: white; /* Color de texto blanco */
+        padding: 20px 0; /* Espaciado interior del footer */
+        text-align: center; /* Texto centrado */
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Aventuras</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#destinos">Destinos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#actividades">Actividades</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#experiencias">Experiencias</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Sección de Carrusel -->
+    <div
+      id="carouselExampleIndicators"
+      class="carousel slide"
+      data-ride="carousel"
+    >
+      <ol class="carousel-indicators">
+        <li
+          data-target="#carouselExampleIndicators"
+          data-slide-to="0"
+          class="active"
+        ></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div
+          class="carousel-item active"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1682687220161-e3e7388e4fad?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+          "
+        ></div>
+        <div
+          class="carousel-item"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1586459289542-1f0d20bd437e?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+          "
+        ></div>
+        <div
+          class="carousel-item"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1709385927231-652c94a1f7bd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+          "
+        ></div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#carouselExampleIndicators"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+      </a>
+    </div>
+    <!-- Sección de Aventuras -->
+    <section id="aventuras" class="container mt-5">
+      <h2>Aventuras</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img
+              src="https://images.unsplash.com/photo-1528543606781-2f6e6857f318?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top"
+              alt="Aventura 1"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Aventura 1</h5>
+              <p class="card-text">Descripción de la aventura 1.</p>
+              <a href="#" class="btn btn-primary mt-auto">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img
+              src="https://images.unsplash.com/photo-1566759996874-04d713cc224a?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top"
+              alt="Aventura 2"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Aventura 2</h5>
+              <p class="card-text">Descripción de la aventura 2.</p>
+              <a href="#" class="btn btn-primary mt-auto">Ver más</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img
+              src="https://images.unsplash.com/photo-1533107862482-0e6974b06ec4?q=80&w=1941&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              class="card-img-top"
+              alt="Aventura 3"
+            />
+            <div class="card-body d-flex flex-column">
+              <h5 class="card-title">Aventura 3</h5>
+              <p class="card-text">Descripción de la aventura 3.</p>
+              <a href="#" class="btn btn-primary mt-auto">Ver más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Sección de Testimonios -->
+    <section id="testimonios" class="container mt-5">
+      <h2>Testimonios</h2>
+      <div class="container">
+        <div class="card mb-4">
+          <img
+            src="https://images.unsplash.com/photo-1459231978203-b7d0c47a2cb7?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="card-img-top"
+            alt="Persona 1"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Increíble experiencia</h5>
+            <p class="card-text">
+              ¡El viaje fue increíble! Recomiendo encarecidamente visitar este
+              lugar. La naturaleza es impresionante y las actividades son
+              emocionantes. Definitivamente volveré.
+            </p>
+            <p class="text-muted">Por: Juan Pérez</p>
+            <button class="btn btn-outline-danger">
+              <span class="material-icons">favorite_border</span>
+            </button>
+          </div>
+        </div>
+        <div class="card mb-4">
+          <img
+            src="https://images.unsplash.com/photo-1448518184296-a22facb4446f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="card-img-top"
+            alt="Persona 2"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Una experiencia única</h5>
+            <p class="card-text">
+              Esta aventura superó todas mis expectativas. Los paisajes son
+              impresionantes y la gente es muy amable. Definitivamente volveré
+              el próximo año.
+            </p>
+            <p class="text-muted">Por: María López</p>
+            <button class="btn btn-outline-danger">
+              <span class="material-icons">favorite_border</span>
+            </button>
+          </div>
+        </div>
+        <div class="card mb-4">
+          <img
+            src="https://images.unsplash.com/photo-1486927819089-e4d82c5e2444?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="card-img-top"
+            alt="Persona 3"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Una experiencia inolvidable</h5>
+            <p class="card-text">
+              No tengo palabras para describir lo asombroso que fue este viaje.
+              Definitivamente fue una experiencia que nunca olvidaré. ¡Volveré
+              el próximo verano!
+            </p>
+            <p class="text-muted">Por: Roberto González</p>
+            <button class="btn btn-outline-danger">
+              <span class="material-icons">favorite_border</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="formulario" class="container mt-5">
+      <h2>Formulario de Inscripción</h2>
+      <form>
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="nombre"
+            placeholder="Ingrese su nombre"
+          />
+        </div>
+        <div class="form-group">
+          <label for="telefono">Teléfono:</label>
+          <input
+            type="tel"
+            class="form-control"
+            id="telefono"
+            placeholder="Ingrese su teléfono"
+          />
+        </div>
+        <div class="form-group">
+          <label for="destino">Destino deseado:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="destino"
+            placeholder="Ingrese el destino deseado"
+          />
+        </div>
+        <div class="form-group">
+          <label for="fecha">Fecha de viaje:</label>
+          <input type="date" class="form-control" id="fecha" />
+        </div>
+        <div class="form-group text-center">
+          <button type="submit" class="btn btn-danger">
+            <span class="material-icons">favorite</span> Enviar
+          </button>
+        </div>
+      </form>
+    </section>
+    <footer class="mt-5">
+      <div class="container">
+        <p class="font-weight-bold">¡Descubre tu próxima aventura!</p>
+        <p>
+          Derechos de autor © 2023 Aventuras en la Naturaleza - Creado por DJ
+        </p>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
